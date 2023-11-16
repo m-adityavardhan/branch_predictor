@@ -44,6 +44,10 @@ class Counter():
     # dummy  function which will be overwritten by child classes
     def display(self,*args):
         pass
+    
+    # dummy  function which will be overwritten by child classes
+    def getMissRate(self):
+        pass
 
     # dummy  function which will be overwritten by child classes
     def updateBranchRegistry(self,actualPrediction):

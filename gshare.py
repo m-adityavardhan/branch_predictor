@@ -12,9 +12,12 @@ class GShare(Counter):
         # converting the Xor value back to binary and appending it to rest of index bits to return final index value
         return int(m+bin(low)[2:].zfill(self.noOfRegisterBits),2)
     
+    def getMissRate(self):
+        # calculate miss rate and return
+        return self.missCount*100/self.totalCount
+
     def display(self, traceFile):
-        # calculatin miss rate
-        self.missRate = self.missCount*100/self.totalCount
+        self.missRate = self.getMissRate()
         # printing output as required 
         print('''COMMAND
 ./sim gshare {} {} {}

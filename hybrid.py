@@ -46,10 +46,12 @@ class Hybrid(Counter):
             # decrement chooser count if gshare is wrong and bimodal is correct
             self.chooserTable[index] = max(0,self.chooserTable[index]-1)
 
+    def getMissRate(self):
+        # calculate miss rate and return
+        return self.missCount*100/self.totalCount
 
     def display(self, traceFile):
-        # calculatin miss rate
-        self.missRate = self.missCount*100/self.totalCount
+        self.missRate = self.getMissRate()
         gShareNoOfBits = self.gsharePredictor.noOfIndexBits
         registerBits = self.gsharePredictor.noOfRegisterBits
         bimodalNoOfBits = self.bimodalPredictor.noOfIndexBits

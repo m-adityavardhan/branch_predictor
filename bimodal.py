@@ -5,10 +5,13 @@ class Bimodal(Counter):
         binary = bin(int(branchPC, 16))[2:].zfill(32) #converting hex to binary
         # returning extracted bits
         return int(binary[-2-self.noOfIndexBits: -2],2)
-        
+
+    def getMissRate(self):
+        # calculate miss rate and return
+        return self.missCount*100/self.totalCount
+  
     def display(self,traceFile):
-        # calculatin miss rate
-        self.missRate = self.missCount*100/self.totalCount
+        self.missRate = self.getMissRate()
         # printing output as required 
         print('''COMMAND
 ./sim bimodal {} {}

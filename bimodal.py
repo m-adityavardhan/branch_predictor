@@ -19,7 +19,7 @@ OUTPUT
 number of predictions:		{}
 number of mispredictions:	{}
 misprediction rate:		{:.2f}%
-FINAL BIMODAL CONTENTS'''.format(self.noOfIndexBits,traceFile,self.totalCount,self.missCount,missRate))
+FINAL BIMODAL CONTENTS'''.format(self.noOfIndexBits,traceFile,self.totalCount,self.missCount,self.missRate))
         for count,index in enumerate(self.predictorTable):
             print('{}\t{}'.format(count,index))
         

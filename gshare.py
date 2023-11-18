@@ -25,7 +25,7 @@ OUTPUT
 number of predictions:		{}
 number of mispredictions:	{}
 misprediction rate:		{:.2f}%
-FINAL GSHARE CONTENTS'''.format(self.noOfIndexBits,self.noOfRegisterBits,traceFile,self.totalCount,self.missCount,missRate))
+FINAL GSHARE CONTENTS'''.format(self.noOfIndexBits,self.noOfRegisterBits,traceFile,self.totalCount,self.missCount,self.missRate))
         for count,index in enumerate(self.predictorTable):
             print('{}\t{}'.format(count,index))
     

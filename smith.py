@@ -18,4 +18,4 @@ OUTPUT
 number of predictions:		{}
 number of mispredictions:	{}
 misprediction rate:		{:.2f}%
-FINAL COUNTER CONTENT:		{}'''.format(self.noOfCounterBits,traceFile,self.totalCount,self.missCount,missRate,self.current_counter_value))
+FINAL COUNTER CONTENT:		{}'''.format(self.noOfCounterBits,traceFile,self.totalCount,self.missCount,self.missRate,self.current_counter_value))

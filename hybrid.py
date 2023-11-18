@@ -62,7 +62,7 @@ OUTPUT
 number of predictions:		{}
 number of mispredictions:	{}
 misprediction rate:		{:.2f}%
-FINAL CHOOSER CONTENTS'''.format(self.chooserBits,gShareNoOfBits,registerBits,bimodalNoOfBits,traceFile,self.totalCount,self.missCount,missRate))
+FINAL CHOOSER CONTENTS'''.format(self.chooserBits,gShareNoOfBits,registerBits,bimodalNoOfBits,traceFile,self.totalCount,self.missCount,self.missRate))
         for count,index in enumerate(self.chooserTable):
             print('{}\t{}'.format(count,index))
         print('FINAL GSHARE CONTENTS')

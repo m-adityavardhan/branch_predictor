@@ -3,10 +3,10 @@
 
 This project implements several branch prediction algorithms as described in the MP2 instructions.pdf
 The available predictors are:
-- Smith
-- Bimodal
-- Gshare
-- Hybrid
+- [Smith Predictor](https://en.wikipedia.org/wiki/Smith_predictor)
+- [Bimodal Predictor](https://www.cs.cornell.edu/courses/cs4110/2012fa/lectures/branch-prediction.pdf)
+- [Gshare Predictor](https://inst.eecs.berkeley.edu/~cs152/fa19/lectures/Lecture14-BranchPrediction.pdf)
+- [Hybrid Predictor](https://www.cs.utexas.edu/~lin/papers/hybrid-branch-predictor.pdf)
 
 ## How to Run
 
